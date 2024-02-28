@@ -23,7 +23,7 @@ const requestData = {
   prompt: prompt
 };
 
-axios.post(apiUrl, requestData)
+const response = await axios.post(apiUrl, requestData)
   .then(response => {
     const responseData = response.data.split('\n');
 
@@ -42,11 +42,15 @@ axios.post(apiUrl, requestData)
 
     console.log('Complete Response:', fullResponse.trim());
 
-    res.send({ output: fullResponse.trim() });
+    // res.send({ output: fullResponse.trim() });
+
+    return fullResponse.trim();
   })
   .catch(error => {
     console.error('Error:', error.message);
   });
+
+  res.send({ output: response });
 })
 
 
