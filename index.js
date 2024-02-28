@@ -1,13 +1,11 @@
-const { OpenAI } = require('openai');
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const { createCanvas } = require('canvas');
-const fs = require('fs');
-const path = require('path');
+
 const dotenv = require('dotenv');
 const { default: axios } = require('axios');
-const nlp = require('compromise');
+
 const { exec } = require('child_process');
 
 
