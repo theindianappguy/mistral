@@ -1,12 +1,7 @@
-# Location Finder App
+# Node.js App on Render with Model Interaction
 
-This is a simple React web application that retrieves the user's location using the IPinfo API and displays it on the screen. The application allows users to fetch their current location with the click of a button.
+This is a basic Node.js application that interacts with a model. The application is set up with Express to provide an API endpoint for sending prompts to the model , And it will give you the reponse like other ai models like chatGpt and gemini.
 
-## Features
-
-- Fetches the user's location based on their IP address.
-- Displays the city and country of the user's location.
-- Simple and responsive user interface.
 
 ## Prerequisites
 
@@ -23,7 +18,7 @@ Make sure you have the following installed on your machine:
 ## usage
 
 
-To start the server : npm run dev
+To start the server : npm start
 
 
  
